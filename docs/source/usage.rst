@@ -1,34 +1,31 @@
-Usage
-=====
+Usage Guide
+===========
 
-.. _installation:
+Starting the Application
+------------------------
 
-Installation
-------------
+1. Launch the application:
 
-To use Lumache, first install it using pip:
+.. code:: bash
 
-.. code-block:: console
+   streamlit run main.py
 
-   (.venv) $ pip install lumache
+Using the interface :
+=====================
 
-Creating recipes
-----------------
+1. Select model :
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+-  Choose from available models in the dropdown menu
+-  Options: llama3.1, mistral, gemma:7b
 
-.. autofunction:: lumache.get_random_ingredients
+2. Upload documents :
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+-  Click “Upload PDF or Text Files”
+-  Select one or more PDF or text files
+-  Wait for processing confirmation
 
-.. autoexception:: lumache.InvalidKindError
+3. Ask questions :
 
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+-  Type your question in the input field
+-  Click “Get Answer”
+-  View the generated response
