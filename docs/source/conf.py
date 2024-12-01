@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'RAG App'
+copyright = '2025, Nada'
+author = 'Nada'
 
 release = '0.1'
 version = '0.1.0'
