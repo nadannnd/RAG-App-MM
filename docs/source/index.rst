@@ -1,22 +1,29 @@
-Welcome to Lumache's documentation!
-===================================
+Document Q&A System
+===================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+A powerful document question-answering system that supports multiple
+language models and document types.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
-
-Contents
+Features
 --------
 
-.. toctree::
+-  Support for multiple LLM models (llama3.1, mistral, gemma:7b)
+-  PDF and text file processing
+-  Interactive Q&A interface
+-  Vector store-based document retrieval
+-  Streamlit web interface
 
-   usage
-   api
+Quick Start
+-----------
+
+1. Install the requirements:
+
+.. code:: bash
+
+   pip install -r requirements.txt
+
+2. Install the requirements:
+
+.. code:: bash
+
+   streamit run main.py
