@@ -97,14 +97,27 @@ def main():
 
         # Prompt Template
         prompt = ChatPromptTemplate.from_template("""
-        Use the following pieces of context to answer the question at the end. 
-        If you don't know the answer, just say that you don't know, don't try to make up an answer.
+        You are a knowledgeable AI assistant with access to both the provided documents and a broad knowledge base. Follow these guidelines:
+
+        1. If the question is about the provided documents:
+        - Use the context provided to give accurate, specific answers
+        - Include relevant quotes or references from the documents when applicable
+
+        2. If the question is not directly addressed in the documents:
+        - Draw from your general knowledge to provide a helpful response
+        - Clearly indicate when you're providing information beyond the document context
+        - Maintain accuracy and relevance to the question
+
+        3. For questions that combine document content and general knowledge:
+        - Start with information from the documents
+        - Supplement with relevant general knowledge
+        - Make clear connections between both sources of information
 
         Context: {context}
 
         Question: {question}
 
-        Helpful Answer:""")
+        Provide a comprehensive answer that combines document-specific information and general knowledge when appropriate:""")
 
         # Create document chain
         combine_docs_chain = create_stuff_documents_chain(llm, prompt)
