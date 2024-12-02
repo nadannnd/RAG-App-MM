@@ -22,8 +22,8 @@ Quick Start
 
    pip install -r requirements.txt
 
-2. Install the requirements:
+2. Run the streamlit app:
 
 .. code:: bash
 
-   streamit run main.py
+   streamlit run main.py
